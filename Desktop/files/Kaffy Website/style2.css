@@ -1,0 +1,332 @@
+body {
+  width: 980px;
+  height: 724px;
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: auto;
+  overflow-y: scroll;
+  margin: auto;
+}
+
+.header {
+  height: auto;
+  width: 100%;
+  margin-top: 100px;
+  margin: auto;
+  position: relative;
+}
+
+.content {
+  width: 100%;
+  position: relative;
+  top: 0px;
+  bottom: 0px;
+  height: 100%;
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer {
+  display: block;
+  height: auto;
+  width: 100%;
+  position: relative;
+  bottom: 0px;
+  font-size: 15px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  font-family: san-serif, Arial, Helvetica;
+  font-size: 40px;
+  margin-top: 50px;
+}
+
+p {
+  text-align: center;
+  margin-top: 0px;
+}
+
+hr {
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+li a {
+  display: inline-block;
+  padding: 20px;
+  margin: auto;
+  font-size: 15px;
+  color: black;
+  text-decoration: none;
+}
+li a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  display: block;
+  width: 940px;
+  height: 445px;
+  object-fit: cover;
+  object-position: 50% 50%;
+  margin-top: 80px;
+}
+
+.mid-heading {
+  text-align: center;
+  line-height: 1.25em;
+  font-size: 60px;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+.about {
+  text-align: center;
+  line-height: 1.35em;
+  font-size: 40px;
+}
+
+.para {
+  line-height: 1.875em;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: normal;
+  font-family: san-serif, Arial, Helvetica;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 10px;
+  border: 1px solid black;
+  text-align: center;
+  grid-gap: 30px;
+  margin: auto;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+
+.grid-container > img {
+  width: 100%;
+  height: auto;
+  padding-top: 0px;
+}
+
+.row {
+  margin: 20px;
+}
+
+.para1 {
+  line-height: 1.875em;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: normal;
+  margin-bottom: 200px;
+}
+
+.para2 {
+  line-height: 1.875em;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: normal;
+}
+
+.coffee-img {
+  display: block;
+  width: 460px;
+  height: 440px;
+  object-fit: cover;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.flex-container > span {
+  width: 100%;
+  position: relative;
+  top: 100px;
+  bottom: 0px;
+  margin: 10px;
+}
+
+.button {
+  color: white;
+}
+.button a:hover {
+  text-decoration: none;
+}
+
+.adjust {
+  position: relative !important;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  float: right;
+  width: 20px;
+  height: 20px;
+}
+
+.huge {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-left: 150px;
+  float: middle;
+}
+
+.email {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+.ham {
+  position: absolute;
+  display: none;
+  z-index: 1000;
+  top: 20px;
+  right: 20px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
+  background-size: 100%;
+}
+
+.showClose {
+  background-image: url("https://ljc-dev.github.io/testing0/ham-close.svg");
+  display: block;
+}
+
+.showNav {
+  /* show the menu */
+  transform: translateY(0);
+}
+
+.navbar {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  background: black;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+  /* hide the menu above the screen by default */
+  transform: translateY(-100%);
+  /* transition adds a little animation when sliding in and out the menu */
+  transition: transform 0.2s ease;
+}
+
+navbar li {
+  float: none;
+  padding: 20px 0;
+  margin: 0;
+}
+
+@media only screen and (max-width: 578px) {
+  body {
+    float: left;
+    width: 300px;
+    font-size: 16px;
+  }
+
+  .col-sm-11,
+  .col-sm-1 {
+    font-size: 12px;
+    float: center;
+    width: 100%;
+    margin-left: 30px;
+  }
+  .content {
+    float: left;
+    padding: 0;
+    font-size: 16px;
+    width: 100%;
+    margin-top: -30px;
+  }
+
+  .cloth {
+    display: block;
+    max-width: 200px;
+    margin-left: 40px;
+  }
+  .content .mid-heading {
+    float: left;
+    font-size: 20px;
+    margin-right: 60px;
+    margin-top: 50px;
+    font-weight: 900;
+    margin-left: 20px;
+  }
+
+  .huge {
+    display: none;
+  }
+
+  .about,
+  .para {
+    display: none;
+  }
+
+  .row,
+  .grid-container img {
+    max-width: 200px;
+    margin-bottom: 80px;
+    font-size: 16px;
+  }
+
+  .grid-container h4,
+  .button {
+    margin-right: 30px;
+  }
+
+  ul li {
+    display: none;
+  }
+
+  .coffee-img {
+    max-width: 200px;
+    margin-right: 80px;
+  }
+
+  .para2 {
+    color: brown;
+    max-width: 40px;
+    margin-left: 10px;
+  }
+
+  .footer {
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+    margin-left: 5px;
+    max-width: 270px;
+  }
+
+  .ham {
+    display: block;
+  }
+}
